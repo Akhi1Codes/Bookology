@@ -14,6 +14,13 @@ let myLibrary = [
   },
 ];
 
+function bookDisplay() {
+  for (i = 0; i < myLibrary.length; i++) {
+    console.log(myLibrary[i]);
+  }
+  myLibrary.push(stock);
+}
+
 function Book(title, author, pages, status) {
   this.title = title;
   this.author = author;
@@ -24,3 +31,7 @@ function Book(title, author, pages, status) {
 function addBookToLibrary() {
   // do stuff here
 }
+
+const stock = new Book("rock", "karl", 180, "read");
+
+bookDisplay();
