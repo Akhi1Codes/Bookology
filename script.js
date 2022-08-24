@@ -1,25 +1,17 @@
-console.log("clicked");
 let myLibrary = [
   {
-    author: "jake",
     title: "righttime",
+    author: "jake",
     pages: 250,
     status: "read",
   },
   {
-    author: "robert",
     title: "late at night",
+    author: "robert",
     pages: 150,
-    status: "unread",
+    status: "not read",
   },
 ];
-
-function bookDisplay() {
-  for (i = 0; i < myLibrary.length; i++) {
-    console.log(myLibrary[i]);
-  }
-  myLibrary.push(stock);
-}
 
 function Book(title, author, pages, status) {
   this.title = title;
@@ -29,9 +21,33 @@ function Book(title, author, pages, status) {
 }
 
 function addBookToLibrary() {
-  // do stuff here
+  const newBook = new Book(formTitle, authorName, noPages, readStatus);
+  for (i = 0; i < myLibrary.length; i++) {
+    console.log(myLibrary[i]);
+  }
+  myLibrary.push(newBook);
+  formTitle.value = "";
+  authorName.value = "";
+  noPages.value = "";
+  readDetails.value = "";
 }
 
-const stock = new Book("rock", "karl", 180, "read");
+/*********************************************/
 
-bookDisplay();
+const formTitle = document.getElementById("title").value;
+const authorName = document.getElementById("author").value;
+const noPages = document.getElementById("pages").value;
+const readDetails = document.getElementById("status-read");
+const addbook = document.getElementById("addBook");
+const popup = document.getElementById("popup");
+const button = document.getElementById("submit-btn");
+addbook.addEventListener("click", () => (popup.style.display = "contents"));
+button.addEventListener("click", () => {
+  popup.style.display = "none";
+  if (readDetails.checked === true) {
+    readStatus = "read";
+  } else {
+    readStatus = "not read";
+  }
+  addBookToLibrary();
+});
