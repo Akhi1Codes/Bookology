@@ -59,7 +59,7 @@ function Booklayout(bookinfo) {
   book.appendChild(author);
 
   const pagenumbers = document.createElement("p");
-  pagenumbers.textContent = bookinfo.pages + "" + "pages";
+  pagenumbers.textContent = bookinfo.pages + " " + "pages";
   pagenumbers.classList.add("book-label");
   book.appendChild(pagenumbers);
 
