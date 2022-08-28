@@ -1,5 +1,6 @@
 let myLibrary = [];
 
+// Book Constructor
 function Book(title, author, pages, status) {
   this.title = title;
   this.author = author;
@@ -7,6 +8,7 @@ function Book(title, author, pages, status) {
   this.status = status;
 }
 
+//function to add the book into the array
 function addBookToLibrary() {
   let formTitle = document.getElementById("title").value;
   let authorName = document.getElementById("author").value;
@@ -17,6 +19,7 @@ function addBookToLibrary() {
   render();
 }
 
+//function to render the book
 function render() {
   const display = document.querySelector("main");
   const books = document.querySelectorAll(".details-container");
@@ -25,7 +28,9 @@ function render() {
     Booklayout(myLibrary[i]);
   }
 }
-/*********************************************/
+
+/*******************UI ELEMENTS**************************/
+
 const form = document.querySelector("form");
 const addbook = document.getElementById("addBook");
 const popup = document.getElementById("popup");
@@ -42,6 +47,8 @@ form.addEventListener("submit", (e) => {
   popup.style.display = "none";
   addBookToLibrary();
 });
+
+//Creating Book vai DOM
 
 function Booklayout(bookinfo) {
   const book = document.createElement("div");
