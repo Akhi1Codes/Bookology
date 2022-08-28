@@ -168,6 +168,8 @@ form > div {
   align-items: center;
 }
 
+/* Media Quires for Responsive grid system  */
+
 @media screen and (max-width: 450px) {
   main {
     padding: 2%;
