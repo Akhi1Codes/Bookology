@@ -4,7 +4,9 @@
 Responsive Library website,It takes the values of Book-name,Author-name,No. of pages
 and the status(read of not-read), to make them visible on website using DOM manupulation.
 
-Live Link : https://ar-akhil.github.io/library## Screenshots
+Live Link : https://ar-akhil.github.io/library
+
+## Screenshots
 
 ![Desktop Version](https://github.com/Ar-Akhil/library/blob/main/assets/desktop-version.png)
 
