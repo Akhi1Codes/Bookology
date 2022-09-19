@@ -20,7 +20,7 @@ Live Link : https://ar-akhil.github.io/library## Screenshots
 ## Features
 
 - Easy to read 
-- Fullscreen mode
+- Toggle Read and Unread Status
 - Cross platform
 - SEO Friendly
 - Easy to use
