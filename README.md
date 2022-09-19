@@ -19,7 +19,7 @@ Live Link : https://ar-akhil.github.io/library## Screenshots
 
 ## Features
 
-- Easy to read 
+- Deletion of books 
 - Toggle Read and Unread Status
 - Cross platform
 - SEO Friendly
