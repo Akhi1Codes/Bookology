@@ -4,7 +4,7 @@
 Responsive Library website,It takes the values of Book-name,Author-name,No. of pages
 and the status(read of not-read), to make them visible on website using DOM manupulation.
 
-# Live Link : https://ar-akhil.github.io/Bookology/
+# Live Link : https://akhiicodes.github.io/Bookology/
 
 ## Screenshots
 
